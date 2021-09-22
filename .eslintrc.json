@@ -11,12 +11,17 @@
     "ecmaFeatures": {
       "jsx": true
     },
-    "project": "./tsconfig.json"
   },
   "extends": ["next/core-web-vitals", "plugin:@typescript-eslint/recommended", "prettier"], // make sure prettier is last
   "settings": {
     "react": {
       "version": "detect"
     }
-  }
+  },
+  "overrides": [{
+    "files": ["*.ts", "*.tsx"],
+    "parserOptions": {
+      "project": ["./tsconfig.json"]
+    }
+  }]
 }
