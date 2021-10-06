@@ -10,7 +10,7 @@
     "sourceType": "module",
     "ecmaFeatures": {
       "jsx": true
-    },
+    }
   },
   "extends": ["next/core-web-vitals", "plugin:@typescript-eslint/recommended", "prettier"], // make sure prettier is last
   "settings": {
